@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-navbar color="appbase">
+    <ion-title>
+      Ionic 2 - PHP
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="Refresh()">
+        <ion-icon name="refresh"></ion-icon>
+      </button>
+      <button ion-button icon-only (click)="Insert()">
+        <ion-icon name="add"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-searchbar color="appbase" (input)="search($event, searchKey)">
+  </ion-searchbar>
+
+  <ion-list>
+    <ion-item-sliding *ngFor="let member of members">
+      <ion-item (click)="Viewperson(member)">
+        <ion-avatar item-left>
+          <img src="assets/icon/avatar04.png">
+        </ion-avatar>
+        <h2>{{member.mem_first_name}}</h2>
+        <p>{{member.mem_email}}</p>
+      </ion-item>
+      <ion-item-options side="left" >
+        <button ion-button color="primary" (click)="View(member)">
+          <ion-icon name="eye"></ion-icon>
+          View
+        </button>
+        <button ion-button color="secondary" (click)="update(member)">
+          <ion-icon name="open"></ion-icon>
+          Edit
+        </button>
+      </ion-item-options>
+      <ion-item-options side="right">
+        <button ion-button color="danger" (click)="Delete(member.mem_mid)">
+          <ion-icon name="trash"></ion-icon>
+          Delete
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+</ion-content>

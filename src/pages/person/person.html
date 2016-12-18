@@ -1,0 +1,58 @@
+<!--
+  Generated template for the Person page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="appbase">
+    <ion-title>{{person.mem_first_name}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-card>
+
+    <img src="assets/icon/avatar04.png"/>
+    <ion-card-content>
+      <ion-card-title>
+        <h2>{{person.mem_first_name}}</h2>
+      </ion-card-title>
+      <ion-list>
+        <button ion-item>
+          <ion-icon name="mail" item-left></ion-icon>
+          {{person.mem_email}}
+        </button>
+
+        <button ion-item>
+          <ion-icon name="call" item-left></ion-icon>
+          {{person.mem_mobile}}
+        </button>
+
+        <button ion-item>
+          <ion-icon name="home" item-left></ion-icon>
+          {{person.mem_city}}
+        </button>
+
+        <button ion-item>
+          <ion-icon name="stats" item-left></ion-icon>
+          {{person.mem_state}}
+        </button>
+
+        <button ion-item>
+          <ion-icon name="beer" item-left></ion-icon>
+          {{person.mem_country}}
+        </button>
+
+        <button ion-item>
+          <ion-icon name="barcode" item-left></ion-icon>
+          {{person.mem_postal_code}}
+        </button>
+
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

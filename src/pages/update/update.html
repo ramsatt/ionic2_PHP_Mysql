@@ -1,0 +1,66 @@
+<!--
+  Generated template for the Update page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="appbase">
+    <ion-title>update</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-list >
+    <ion-item>
+      <ion-label floating color="appbase">ID</ion-label>
+      <ion-input type="text" value="{{person.mem_mid}}" #id></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating color="appbase">First Name</ion-label>
+      <ion-input type="text" value="{{person.mem_first_name}}" #firstname></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating color="appbase">Last Name</ion-label>
+      <ion-input type="text" value="{{person.mem_last_name}}" #lastname></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating color="appbase">Email</ion-label>
+      <ion-input type="text" value="{{person.mem_email}}" #email></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating color="appbase">Mobile</ion-label>
+      <ion-input type="text" value="{{person.mem_mobile}}" #mobile></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating color="appbase">City</ion-label>
+      <ion-input type="text" value="{{person.mem_city}}" #city></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating color="appbase">State</ion-label>
+      <ion-input type="text" value="{{person.mem_state}}" #state></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating color="appbase">Country</ion-label>
+      <ion-input type="text" value="{{person.mem_country}}" #country></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating color="appbase">PostalCode</ion-label>
+      <ion-input type="text" value="{{person.mem_postal_code}}" #postalcode></ion-input>
+    </ion-item>
+    <br>
+    <button ion-button block color="appbase" (click)="Update(id.value,firstname.value,lastname.value,email.value,mobile.value,city.value,state.value,country.value,postalcode.value)">Update</button>
+
+  </ion-list>
+
+</ion-content>
