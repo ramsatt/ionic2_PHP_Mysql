@@ -16,7 +16,7 @@ export class Datamembers {
   }
 
   LoadMembers() {
-    var url = 'http://localhost/ionic/backend/web/index.php?r=members/loadmembers';
+    var url = 'http://nipc.esy.es/nip/backend/index.php?r=members/loadmembers';
     var response = this.http.get(url).map(res => res.json());
     return response;
   }
@@ -24,14 +24,14 @@ export class Datamembers {
 
   InsertMember(firstname,lastename,email,mobile,city,state,country,postalcode)
   {
-      var url = 'http://localhost/ionic/backend/web/index.php?r=members/insert&firstname='+firstname+'&lastname='+lastename+'&email='+email+'&mobile='+mobile+'&city='+city+'&state='+state+'&country='+country+'&postalcode='+postalcode;
+      var url = 'http://nipc.esy.es/nip/backend/index.php?r=members/insert&firstname='+firstname+'&lastname='+lastename+'&email='+email+'&mobile='+mobile+'&city='+city+'&state='+state+'&country='+country+'&postalcode='+postalcode;
     var response = this.http.get(url).map(res => res.json());
     return response;
   }
 
   DeleteMember(id)
   {
-    var url = 'http://localhost/ionic/backend/web/index.php?r=members/deletemember&id='+id;
+    var url = 'http://nipc.esy.es/nip/backend/index.php?r=members/deletemember&id='+id;
     var response = this.http.get(url).map(res => res.json());
     return response;
 
@@ -39,13 +39,13 @@ export class Datamembers {
 
   EditMember(id,firstname,lastename,email,mobile,city,state,country,postalcode)
   {
-    var url = 'http://localhost/ionic/backend/web/index.php?r=members/editmembers&firstname='+firstname+'&lastname='+lastename+'&email='+email+'&mobile='+mobile+'&city='+city+'&state='+state+'&country='+country+'&postalcode='+postalcode+'&id='+id;
+    var url = 'http://nipc.esy.es/nip/backend/index.php?r=members/editmembers&firstname='+firstname+'&lastname='+lastename+'&email='+email+'&mobile='+mobile+'&city='+city+'&state='+state+'&country='+country+'&postalcode='+postalcode+'&id='+id;
     var response = this.http.get(url).map(res => res.json());
     return response;
   }
 
   searchMembers(name) {
-    var url = 'http://localhost/ionic/backend/web/index.php?r=members/searchmembers&name='+name ;
+    var url = 'http://nipc.esy.es/nip/backend/index.php?r=members/searchmembers&name='+name ;
     var response = this.http.get(url).map(res => res.json());
     return response;
   }

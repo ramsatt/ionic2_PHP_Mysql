@@ -2,5 +2,11 @@
   "name": "PHPCRUD",
   "app_id": "",
   "v2": true,
-  "typescript": true
+  "typescript": true,
+  "proxies": [
+    {
+        "path": "/ionic/backend/web/",
+        "proxyUrl": "http://localhost/ionic/backend/web/"
+    }
+]
 }

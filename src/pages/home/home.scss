@@ -5,3 +5,28 @@ page-home {
 {
   background-color: #581845;
 }
+.loading-md .loading-spinner + .loading-content {
+  margin-left: 16px;
+  background-color:#581845;
+  color:#fff;
+}
+.loading-md .loading-wrapper
+{
+background-color:#581845;
+}
+.loading-md .spinner-crescent circle
+{
+stroke:#fff;
+}
+.loading-ios .loading-wrapper
+{
+background-color:#581845;
+}
+.loading-ios .spinner-crescent circle
+{
+stroke:#fff;
+}
+.loading-ios .loading-spinner + .loading-content
+{
+color:#fff;
+}
